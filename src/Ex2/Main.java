@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner leitura = new Scanner(System.in);
+        Empregado empregado = new Empregado();
         System.out.print("Digite seu nome: ");
-        String nome = leitura.nextLine();
+        empregado.nome = leitura.nextLine();
         System.out.print("Digite seu salário bruto: ");
-        double salarioBruto = leitura.nextDouble();
+        empregado.salarioBruto = leitura.nextDouble();
         System.out.print("Digite o valor da taxa: ");
-        double taxa = leitura.nextDouble();
-        Empregado empregado = new Empregado(nome, salarioBruto, taxa);
+        empregado.taxa = leitura.nextDouble();
         empregado.exibirInformacoes();
 
         System.out.println("Digite o valor da porcetagem do aumento salarial: ");
