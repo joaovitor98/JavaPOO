@@ -1,4 +1,4 @@
-package Ex5;
+package Ex4;
 
 public class ContaBancaria {
     private final int numeroConta;
